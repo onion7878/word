@@ -1,0 +1,12 @@
+# Custom Configuration
+title: Some Might Say
+author: Hanlin
+
+# Default Configuration
+host: 0.0.0.0
+excerpt_separator: <!-- more -->
+markdown: redcarpet
+# baseurl: /word.hanlin.ch
+
+redcarpet: 
+  extensions: [footnotes, fenced_code_blocks, no_intra_emphasis]

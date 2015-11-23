@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article class="padding-bottom-1em">
+	<div>
+		<h2 class="text-capitalize">{{ page.title }}</h2>
+	</div>
+	<div>
+		{{ content }}
+	</div>                 
+	<div class="text-right padding-top-2em">
+		{% if page.tags %}
+		<div>
+			{% for tag in page.tags %}
+			<span class="tag font-size-small font-open-sans gray-color">#<a href="/tags.html#{{ tag }}" title="{{ tag }}">{{ tag }}</a></span>
+			{% endfor %}
+		</div>
+		{% endif %}
+		<div>
+			<time class="gray-color font-date font-size-small" datetime="{{ page.date }}" title="{{ page.date }}">{{ page.date | date:"%c" }}</time>
+		</div>
+	</div>
+</article>

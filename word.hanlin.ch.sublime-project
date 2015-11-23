@@ -1,0 +1,16 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"folder_exclude_patterns": ["_site"]
+		}
+	],
+	"settings":
+	{
+		"FuzzyFilePath":
+		{
+			"path": "."
+		}
+	}
+}
