@@ -3,7 +3,7 @@
 layout: post
 title: 十一月底
 date: 15-12-03 23:34:30
-tags: [life, thought]
+tags: [life, thought, travel, snow]
 categories: [life]
 
 ---
