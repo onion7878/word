@@ -94,6 +94,37 @@ article a {
 	padding-bottom: .05em;
 }
 
+.dream {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1em;
+}
+
+.dream-dates {
+	margin-right: 1em;
+}
+
+.dream-date {
+	text-align: right;
+}
+
+.dream-content {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.quote-person {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: right;
+}
+
+.quote-source {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: right;
+}
+
 .header-nav {
 	flex-grow: 1;
 	text-align: right;

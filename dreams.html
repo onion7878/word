@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article>
+	{% for dream in site.data.dreams %}
+
+	{% if forloop.index0 != 0 %}
+	<hr>
+	{% endif %}
+
+	<div class="dream" id="{{ dream.date | date:"%Y%m%d" }}">
+		<div class="dream-dates gray-color">
+			<div class="dream-date"><time class="font-date" datetime="{{ dream.date }}" title="{{ dream.date }}">{{ dream.date | date:"%d" }}</time></div>
+			<div class="dream-date"><time class="font-date" datetime="{{ dream.date }}" title="{{ dream.date }}">{{ dream.date | date:"%b" }}</time></div>
+			<div class="dream-date"><time class="font-date" datetime="{{ dream.date }}" title="{{ dream.date }}">{{ dream.date | date:"%Y" }}</time></div>
+		</div>
+		<div>
+			<p class="dream-content">{{ dream.content }}</p>
+		</div>
+	</div>
+
+	{% endfor %}
+</article>

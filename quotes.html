@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<article>
+	{% for quote in site.data.quotes %}
+
+	{% if forloop.index0 != 0 %}
+	<hr>
+	{% endif %}
+
+	<div id="{{ forloop.index0 }}">
+		<div>
+		<blockquote>
+			<p>{{ quote.content }}</p>
+		</blockquote>
+		</div>
+		<div class="quote-meta">
+			<p class="quote-person"> {{ quote.person }} </p>
+			<p class="quote-source"> {{ quote.source }} </p>
+		</div>
+	</div>
+	{% endfor %}
+</article>
+
