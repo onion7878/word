@@ -3,7 +3,7 @@
 layout: post
 title: 军中乐园
 date: 15-12-06 00:59:20
-tags: [life, history, thought, love]
+tags: [life, history, thought, love, film]
 categories: [film]
 
 ---
