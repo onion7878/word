@@ -94,6 +94,11 @@ article a {
 	padding-bottom: .05em;
 }
 
+figcaption {
+	text-align: right;
+	font-size: 0.85em;
+}
+
 .dream {
 	display: flex;
 	flex-direction: row;
