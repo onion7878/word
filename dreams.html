@@ -2,27 +2,21 @@
 layout: default
 ---
 
-
 <article>
 	<div>
 		<p><strong>大多数梦还来不及写下来，就已经忘了。</strong></p>
 	</div>
-	{% for dream in site.data.dreams %}
-
-	{% if forloop.index0 != 0 %}
-	<hr>
-	{% endif %}
-
-	<div class="dream" id="{{ dream.date | date:"%Y%m%d" }}">
+	{% for post in site.categories.dream %}
+	{% if forloop.index0 != 0 %} <hr> {% endif %}
+	<div class="dream" id="{{ post.date | date:"%Y%m%d" }}">
 		<div class="dream-dates gray-color">
-			<div class="dream-date"><time class="font-date" datetime="{{ dream.date }}" title="{{ dream.date }}">{{ dream.date | date:"%d" }}</time></div>
-			<div class="dream-date"><time class="font-date" datetime="{{ dream.date }}" title="{{ dream.date }}">{{ dream.date | date:"%b" }}</time></div>
-			<div class="dream-date"><time class="font-date" datetime="{{ dream.date }}" title="{{ dream.date }}">{{ dream.date | date:"%Y" }}</time></div>
+			<div class="dream-date"><time class="font-date" datetime="{{ post.date }}" title="{{ post.date }}">{{ post.date | date:"%d" }}</time></div>
+			<div class="dream-date"><time class="font-date" datetime="{{ post.date }}" title="{{ post.date }}">{{ post.date | date:"%b" }}</time></div>
+			<div class="dream-date"><time class="font-date" datetime="{{ post.date }}" title="{{ post.date }}">{{ post.date | date:"%Y" }}</time></div>
 		</div>
-		<div>
-			<p class="dream-content">{{ dream.content }}</p>
+		<div class="dream-content">
+			{{ post.content }}
 		</div>
 	</div>
-
 	{% endfor %}
 </article>

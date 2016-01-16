@@ -108,7 +108,7 @@ article a {
 	text-align: right;
 }
 
-.dream-content {
+.dream-content p:first-child {
 	margin-top: 0px;
 	margin-bottom: 0px;
 }

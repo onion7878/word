@@ -5,6 +5,9 @@ layout: default
 <nav>
 	<ul class="nav-list no-padding gray-color">
 	{% for post in site.posts %}
+		{% if post.categories contains 'dream' %}
+			{% continue %}
+		{% endif %}
 		<li class=""> 
 		<time class="font-date" datetime="{{ post.date }}" title="{{ post.date }}">{{ post.date | date:"%d %b %Y" }}</time>
 		<span>»</span>
