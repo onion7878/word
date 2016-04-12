@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<nav>
+	<ul class="nav-list no-padding gray-color">
+	{% for post in site.categories.log %}
+	<li> 
+	<span>»</span>
+	<a class="font-open-sans" href="{{ post.url }}">{{ post.title }}</a>
+	</li>
+	{% endfor %}
+	</ul>
+</nav>

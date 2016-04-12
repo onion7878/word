@@ -8,6 +8,9 @@ layout: default
 		{% if post.categories contains 'dream' %}
 			{% continue %}
 		{% endif %}
+		{% if post.categories contains 'log' %}
+			{% continue %}
+		{% endif %}
 		<li class=""> 
 		<time class="font-date" datetime="{{ post.date }}" title="{{ post.date }}">{{ post.date | date:"%d %b %Y" }}</time>
 		<span>»</span>
