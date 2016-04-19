@@ -5,7 +5,7 @@ author: Hanlin
 # Default Configuration
 host: 0.0.0.0
 excerpt_separator: <!-- more -->
-markdown: redcarpet
+markdown: kramdown
 # baseurl: /word.hanlin.ch
 
 redcarpet: 
