@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: 旅行的焦虑
+title: 旅行前的焦虑
 date: 16-04-11 21:12:52
 tags: [travel, night, people, google, beer, germany]
 categories: [life]
