@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<nav>
+	<ul class="nav-list no-padding gray-color" style="font-size: large;">
+	{% for post in site.categories.where reversed%}
+	<li> 
+	<span>»</span>
+	<a class="font-open-sans" href="{{ post.url }}">{{ post.title }}</a>
+	</li>
+	{% endfor %}
+	</ul>
+</nav>
