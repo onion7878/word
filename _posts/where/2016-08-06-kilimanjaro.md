@@ -3,7 +3,7 @@
 layout: post
 title: 乞力马扎罗山
 date: 16-08-06 01:01:49
-tags: []
+tags: [非洲, 木遥, 蒋方舟, 旅行]
 categories: [where]
 
 ---
