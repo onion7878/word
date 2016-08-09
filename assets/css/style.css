@@ -13,6 +13,10 @@ body {
 	width: 50%;
 }
 
+iframe {
+	width: 100%;
+}
+
 a,
 a:link,
 a:visited {
