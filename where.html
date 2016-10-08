@@ -10,5 +10,12 @@ layout: default
 	<a class="font-open-sans" href="{{ post.url }}">{{ post.title }}</a>
 	</li>
 	{% endfor %}
+	<hr>
+	{% for post in site.categories.where-done %}
+	<li> 
+	<span class="font-date">{{ post.donetime }}</span>
+	<del><a class="font-open-sans" href="{{ post.url }}">{{ post.title }}</a></del>
+	</li>
+	{% endfor %}
 	</ul>
 </nav>
